@@ -13,6 +13,10 @@
     font-family: 'Quicksand', Helvetica, sans-serif;
   }
 
+  code {
+    color: #3F72AF;
+  }
+
   a {
     color: #3F72AF;
     text-decoration: none;
@@ -470,6 +474,10 @@ nav a {
   
   
 /* -------------------- MODAL ------------------ */
+
+.title-modal {
+  text-align: ;
+}
 
 /* width of modal: different following the device: small (100%), medium(50%), large(30%); */
 .portfolio-modal .modal-dialog {
