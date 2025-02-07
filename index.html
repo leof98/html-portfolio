@@ -23,7 +23,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
     <div class="container">
-      <a class="js-scroll-trigger" href="#page-top">
+      <a data-i18n="home-bt" class="js-scroll-trigger" href="#page-top">
         INÍCIO
       </a>
       <button id="menu_bt" class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
@@ -125,7 +125,7 @@
     <section id="portfolio">
       <div id="portfolio-text">
         <br><br>
-        <h2>PORTFÓLIO</h2>
+        <h2 style="font-size: 40px;">PORTFÓLIO</h2>
         <h6 id="projectsText" class="section-subheading text-muted"><i>Confira alguns dos meus projetos</i></p><br>
         </div>
           <div id="portfolio-button-container">
@@ -175,22 +175,7 @@
             </a>
           </div>
 
-          <!-- ======  EXCEL 01 ===== -->
-          <div class="col-12 col-sm-6 col-md-4 portfolio-item show column excel">
-            <a class="portfolio-link" data-bs-toggle="modal" href="#excel01">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <p>
-                    Excel 01
-                  </p>
-                  <hr>
-                  <p class="explanation_portfolio">---<br></p>
-                </div>
-              </div>
-              <img class="img-fluid" src="assets/img/projects/excel01.png" alt="">
-            </a>
-          </div>
-
+          
           <!-- ======  PYTHON regressao linear ===== -->
           <div class="col-12 col-sm-6 col-md-4 portfolio-item show column python">
             <a class="portfolio-link" data-bs-toggle="modal" href="#python00">
@@ -204,7 +189,7 @@
                     polinomial via gradiente descendente em Python.<br></p>
                 </div>
               </div>
-              <img class="img" src="assets/img/projects/python00.png" alt="">
+              <img class="img" src="assets/img/projects/python0.png" alt="">
             </a>
           </div>
           <!-- ======  PYTHON regressao logistica ===== -->
@@ -221,7 +206,7 @@
                   </p>
                 </div>
               </div>
-              <img class="img-fluid" src="assets/img/projects/python01.png" alt="">
+              <img class="img-fluid" src="assets/img/projects/python1.png" alt="">
             </a>
           </div>
 
@@ -270,10 +255,27 @@
               <img class="img-fluid" src="assets/img/projects/dashboard02.png" alt="">
             </a>
           </div>
-      </div>
+          <div class="col-12 col-sm-6 col-md-4 portfolio-item show column excel">
+            <a class="portfolio-link" data-bs-toggle="modal" href="#excel01">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <p>
+                    Excel 01
+                  </p>
+                  <hr>
+                  <p class="explanation_portfolio">---<br></p>
+                </div>
+              </div>
+              <img class="img-fluid" src="assets/img/projects/excel1.png" alt="">
+            </a>
+          </div>
+      
+        </div>
+      <!-- ======  EXCEL 01 ===== -->
     </section>
 
-<!-- =======================  CONTACT SECTION ======================= -->
+
+<!-- =====================  CONTACT SECTION ===================== -->
       <section id="contact" class="container-contact">
         <div class="container-fluid">
           <div class="row">
@@ -297,7 +299,8 @@
           </div>
         </div>
       </section>
-    
+
+    <!-- ==========================  FOOTER SECTION ========================== -->
     <footer>
         <ul class="list-inline social-buttons">
           <li class="list-inline-item social-buttons">
@@ -317,7 +320,7 @@
           </li>
         </ul>
 
-        <!--<div class="dropdown language-switcher">
+        <div class="dropdown language-switcher">
           <button class="btn btn-secondary dropdown-toggle" style="font-size: 15px;" type="button" 
           id="languageSwitcher" data-bs-toggle="dropdown" aria-expanded="false">
             🌍 PT
@@ -326,51 +329,52 @@
             <li><a class="dropdown-item" href="#" data-lang="pt">Português</a></li>
             <li><a class="dropdown-item" href="#" data-lang="en">English</a></li>
           </ul>
-        </div>-->
+        </div>
 
 
     </footer>
 
 <!-- =======================  MODAL SECTION ======================= --> 
-
 <!----------------- Modal Artigo 1 --------------->
 <div class="portfolio-modal modal fade" id="artigo01" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-      </div>
       <div class="modal-body text-center">
+        <div class="text-start mt-3" style="padding: 55px; padding-bottom: 0px; padding-top: 0px;">
         <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal" aria-label="Close"></button>
-        <h4 class="modal-title">Investimento em pesquisa e educação.</h4>
-        <p class="text-muted"><i>Artigo apresentado no IV Encontro de Ciência de Dados em 2024.</i></p>
-        <img class="img-fluid mx-auto d-block" src="assets/img/projects/artigo1.png" alt="Imagem do artigo" style="max-width: 100%; width: 250px;">
-        <div class="text-start mt-3" style="padding: 0 30px;">
-          <h6>Descrição</h6>
-          <hr>
+        <!-- <img class="img-fluid mx-auto d-block" src="assets/img/projects/artigo1.png" alt="Imagem do artigo" style="max-width: 100%; width: 250px;"> -->
+          <h4 class="modal-title">Investimento em Pesquisa e Educação.</h4>
+          <h6 style="text-align: center;">Impacto na produção de artigos científicos (2009-2019)</h6>
+        <br>
+        <br>
+        <br>
+        <h6>Descrição</h6>
+        <hr>
+        <p class="text-muted"><h6><i>Artigo apresentado no <a href="https://fateccotia.cps.sp.gov.br/eventos/iv-encontro-de-ciencia-de-dados/">IV Encontro de Ciência de Dados</a> em 2024.</h6></i>
+        </p>
           <p>
             Este estudo explora a relação entre investimentos em educação, ciência e tecnologia e a
             produção científica em países do MERCOSUL e do NAFTA.
           </p>
           <p>
-            Utilizando ciência de dados e visualização com <b>Power BI</b>, a pesquisa analisa os investimentos e a produção científica 
-            de 2009 a 2019, destacando o desempenho do Brasil e as diferenças entre os blocos.
+            A pesquisa utiliza processamento de dados com <code>Python</code> e <code>Excel</code>, e visualização 
+            com <code>Power BI</code> para analisar os investimentos e a produção científica de 2009 a 2019.
           </p>
           <p>
             Os resultados indicam que, enquanto os países do NAFTA apresentam uma produção estável, 
-            os países do MERCOSUL experimentam um crescimento mais acentuado, mas com variações. 
+            os países do MERCOSUL experimentam um crescimento mais acentuado. 
           </p>
           <p>
-            <h6>Abaixo você pode ver os <i>dashboards</i> produzidos durante o estudo</h6>
+            <h6>Confira os <i>dashboards</i> produzidos no estudo.</h6>
             <a class="btn btn-secondary text-uppercase" href="#" data-bs-toggle="modal" data-bs-target="#galeria-modal-artigo">Dashboards</a>
           </p>
           <h6>Leia mais</h6>
           <hr>
           <p>
             Você pode ler o artigo completo em <a href="#">####</a>.
-          </p>
-          <div>
+            <br>
             <a class="btn btn-secondary text-uppercase" href="#">Artigo</a>
-          </div>
+          </p>
         </div>
       </div>
     </div>
@@ -421,37 +425,34 @@
 <div class="portfolio-modal modal fade" id="python-pca" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-      </div>
       <div class="modal-body text-center">
+        <div class="text-start mt-3" style="padding: 0 55px; padding-top: 0px; padding-bottom: 0px;">
         <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal"></button>
-        <h4>Análise de componentes principais</h4>
-        <p class="text-muted"><i>Projeto realizado para a disciplina de álgebra linear em 2024.</i></p>
         <img class="img-fluid mx-auto d-block" src="assets/img/projects/pca1.png" alt="Imagem pca" style="max-width: 100%; width: 250px;">
-        <div class="text-start mt-3" style="padding: 0 30px;">
-          <h6>Descrição</h6>
-          <hr>
+        <h4 style="text-align: center;">Análise de Componentes Principais</h4>
+        <br>
+        <br>
+        <h6>Descrição</h6>
+        <hr>
+        <p class="text-muted"><i>Projeto realizado para a disciplina de álgebra linear em 2024.</i></p>
           <p>
             Este projeto explora a Análise de Componentes Principais (PCA), uma técnica estatística utilizada para reduzir a dimensionalidade de 
             conjuntos de dados sem perder informações essenciais.
             <br>
             <br>
             PCA é amplamente aplicado em ciência de dados para visualizar dados de alta dimensão, 
-            melhorar o desempenho de modelos de <i>machine learning</i> e identificar padrões ocultos.
+            melhorar o desempenho de modelos de <code>machine learning</code> e identificar padrões ocultos.
           </p>
           <p>
-            <h6>Abaixo você pode ler o relatório completo da análise.</h>
-          </p>
-          <p>
-            <a class="btn btn-secondary text-uppercase" href="#">relatório</a>
+            <h6>Confira o relatório completo abaixo.</h6>
+              <a class="btn btn-secondary text-uppercase" href="#">relatório</a>
           </p>
           <h6>Leia mais</h6>
           <hr>
-          <p>
-            O código-fonte completo do projeto está disponível no 
-            <a href="#">Github</a>.
-          </p>
           <div>
+            O código-fonte do projeto está no 
+            <a href="#">Github</a>.
+            <br>
             <a class="btn btn-secondary text-uppercase" href="#">GITHUB</a>
           </div>
         </div>
@@ -504,46 +505,42 @@
 <div class="portfolio-modal modal fade" id="python00" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-      </div>
       <div class="modal-body text-center">
-        <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal"></button>
-        <h4 class="modal-title">Ajuste Polinomial com Gradiente Descendente</h4>
-        <p class="text-muted"><i>Projeto realizado para a disciplina de cálculo em 2024.</i></p>
-        <img class="img-fluid mx-auto d-block" src="assets/img/projects/python00.png" alt="Imagem regressao linear" style="max-width: 100%; width: 250px;">
-        <div class="text-start mt-3" style="padding: 40px;">
+        <div class="text-start mt-3" style="padding: 55px; padding-bottom: 0px; padding-top: 0px;">
+          <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal"></button>
+          <img class="img-fluid mx-auto d-block" src="assets/img/projects/python00.png" alt="Imagem regressao linear" style="max-width: 100%; width: 200px;">
+          <p>
+            <h4 class="modal-title">Ajuste Polinomial com Gradiente Descendente</h4>
+          </p>
           <h6>Descrição</h6>
           <hr>
+          <p class="text-muted"><i>Projeto realizado para a disciplina de cálculo em 2024.</i></p>
           <p>
-            Implementa um ajuste polinomial utilizando o <b>Gradiente Descendente</b> para encontrar 
+            Implementa um ajuste polinomial utilizando o <code>gradiente descendente</code> para encontrar 
             os coeficientes de um polinômio que melhor se ajusta a um conjunto de dados.
           </p>
           <p>
             Principais funcionalidades:
             <ul>
-              <li>Implementação do algoritmo de Gradiente Descendente para ajuste de curvas.</li>
-              <li> Cálculo do gradiente da função de erro para otimização dos coeficientes.</li>
-              <li>Critério de convergência baseado na distância entre coeficientes sucessivos.</b></li>
-              <li>Visualização do ajuste polinomial comparado aos dados originais usando <b>Matplotlib</b>.</li>
+              <li>Ajuste de curvas com gradiente descendente.</li>
+              <li>Otimização dos coeficientes via gradiente da função de erro.</li>
+              <li>Convergência baseada na variação dos coeficientes.</li>
+              <li>Visualização do ajuste polinomial com <code>Matplotlib</code>.</li>
             </ul>
           </p>
-          <br>
           <p>
-            <h6>Abaixo você pode ver uma breve demonstração do projeto.</h>
-          </p>
-          <p>
+            <h6>Confira uma breve demonstração abaixo.</h6>
             <a class="btn btn-secondary text-uppercase" href="#">Demonstração</a>
             <a class="btn btn-secondary text-uppercase" href="#" data-bs-toggle="modal" data-bs-target="#galeriaModal">Código</a>
           </p>
           <h6>Leia mais</h6>
           <hr>
           <p>
-            O código-fonte completo do projeto está disponível no 
+            O código-fonte completo está disponível no 
             <a href="https://github.com/leof98/math/blob/main/calculus/linear_regression.py">Github</a>.
-          </p>
-          <div>
+            <br>
             <a class="btn btn-secondary text-uppercase" href="#">GITHUB</a>
-          </div>
+          </p>
         </div>
       </div>
     </div>
@@ -595,16 +592,15 @@
 <div class="portfolio-modal modal fade" id="python01" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-      </div>
       <div class="modal-body text-center">
-        <h4 class="modal-title">Regressão Logística para Previsão da taxa de Mortalidade</h4>
-        <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal"></button>
-        <p class="text-muted"><i>Projeto realizado para a disciplina de cálculo em 2024.</i></p>
-        <img class="img-fluid mx-auto d-block" src="assets/img/projects/python01.png" alt="Imagem regressao linear" style="max-width: 100%; width: 250px;">
-        <div class="text-start mt-3" style="padding: 0 40px;">
+        <div class="text-start mt-3" style="padding: 0 55px; padding-bottom: 0px;">
+          <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal"></button>
+          <img class="img-fluid mx-auto d-block" src="assets/img/projects/python01.png" alt="Imagem regressao linear" style="max-width: 100%; width: 170px;">
+          <h4 class="modal-title">Modelo de Regressão Logística</h4>
+          <br>
           <h6>Descrição</h6>
           <hr>
+          <p class="text-muted"><i>Projeto realizado para a disciplina de cálculo em 2024.</i></p>
           <p>
             Este projeto aborda a Regressão Logística, um modelo estatístico amplamente utilizado para resolver problemas de classificação binária.
             <br>
@@ -616,28 +612,24 @@
             <ul>
               <li>Implementação da função de sigmoide e das derivadas parciais.</li>
               <li>Treinamento do modelo com gradiente descendente.</li>
-              <li>Cálculo de métricas de avaliação para medir a eficácia da abordagem</li>
+              <li>Cálculo de métricas para avaliar a eficácia.</li>
               <li>Normalização dos dados para melhorar a eficiência.</li>
-              <li>Visualização dos resultados com <b>Matplotlib</b>.</li>
+              <li>Visualização dos resultados com <code>Matplotlib</code>.</li>
             </ul>
           </p>
-          <br>
           <p>
-            <h6>Abaixo você pode ver uma breve demonstração do projeto.</h>
-          </p>
-          <p>
+            <h6>Confira uma breve demonstração abaixo.</h6>
             <a class="btn btn-secondary text-uppercase" href="#">Demonstração</a>
             <a class="btn btn-secondary text-uppercase" href="#" data-bs-toggle="modal" data-bs-target="#galeriaModal02">Código</a>
           </p>
           <h6>Leia mais</h6>
           <hr>
           <p>
-            O código-fonte completo do projeto está disponível no 
+            O código-fonte completo está disponível no 
             <a href="https://github.com/leof98/math/blob/main/calculus/logistic_regression.py">Github</a>.
-          </p>
-          <div>
+            <br>
             <a class="btn btn-secondary text-uppercase" href="https://github.com/leof98/math/blob/main/calculus/logistic_regression.py">GITHUB</a>
-          </div>
+          </p>
         </div>
       </div>
     </div>
@@ -697,49 +689,47 @@
 <div class="portfolio-modal modal fade" id="python02" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-      </div>
       <div class="modal-body text-center">
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         <h4>Projetos - Desafio 100 Dias de Código</h4>
-        <p class="text-muted"><i>Curso concluído em 2024/25.</i></p>
-        <div class="text-start mt-3" style="padding: 0 30px;">
+        <br>
+        <br>
+        <div class="text-start mt-3" style="padding: 0 55px; padding-bottom: 0px;">
           <h6>Descrição</h6>
           <hr>
+          <h6 class="text-muted"><i>Curso em andamento (49/100).</i></h6>
+          <br>
           <p>
             Projetos desenvolvidos durante um <a href="https://www.udemy.com/course/100-days-of-code/">curso</a> 
             intensivo que propõe um <i>bootcamp</i> de 100 dias de programação diária.
           </p>
           <p>
-            O objetivo do curso é ensinar e dominar a linguagem Python, com foco em automação, 
+            O objetivo do curso é ensinar e dominar a linguagem <code>Python</code>, com foco em automação, 
             desenvolvimento de jogos, aplicativos web, ciência de dados e aprendizado de máquina.
           </p>
-          <p>Tecnologias e Ferramentas Utilizadas:
+          <p>Tecnologias e ferramentas utilizadas:
             <ul>
-              <li>Automação: <b>Selenium, Beautiful Soup, Request</b></li>
+              <li>Automação: <code>Selenium, Beautiful Soup, Request</code></li>
               <li>Desenvolvimento Web: Flask</li>
-              <li>Ciência de Dados: <b>Pandas, NumPy, Plotly, Matplotlib</b></li>
-              <li>Aprendizado de Máquina: <b>Scikit Learn</b></li>
+              <li>Ciência de Dados: <code>Pandas, NumPy, Plotly, Matplotlib</code></li>
+              <li>Aprendizado de Máquina: <code>Scikit Learn</code></li>
               <li>Criação de Jogos: Blackjack, Pong, Snake</li>
-              <li>Desenvolvimento de APIs: GUIs e aplicativos com Python</li>
+              <li>APIs: GUIs e aplicativos com <code>Python</code></li>
             </ul>
           </p>
           <p>
-            <h6>Abaixo você pode ver uma breve demonstração dos principais projetos.</h>
-          </p>
-          <p>
+            <h6>Confira a demonstração dos principais projetos abaixo.</h6>
             <a class="btn btn-secondary text-uppercase" href="https://github.com/leof98/python/tree/main/100-days-of-code">Demonstração</a>
             <a class="btn btn-secondary text-uppercase" href="https://github.com/leof98/python/tree/main/100-days-of-code" data-bs-toggle="modal" data-bs-target="#galeriaModal">Código</a>
           </p>
           <h6>Leia mais</h6>
           <hr>
           <p>
-            O código-fonte completo do projetos está disponível no 
+            O código-fonte dos projetos está disponível no 
             <a href="https://github.com/leof98/python/tree/main/100-days-of-code">Github</a>.
-          </p>
-          <div>
+            <br>
             <a class="btn btn-secondary text-uppercase" href="https://github.com/leof98/python/tree/main/100-days-of-code">GITHUB</a>
-          </div>
+          </p>
         </div>
       </div>
     </div>
@@ -794,33 +784,35 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl"></div>
-        </div>
       </div>
       <div class="container">
         <div class="row">
           <div class="col-lg-10 mx-auto">
             <div class="modal-body">
-              <!-- Modal content (image, title, description, and links) -->
-              <h4>Otimização do fluxo de pessoas em prédios comerciais</h4>
-              <p><i>Projeto realizado em 2024.</i></p>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              <p>
+              <h4 class="modal-title">Otimização do Fluxo de Pessoas em Prédios Comerciais</h4>
+              </p>
+              <br>
+              <br>
               <div style="text-align: left">
                 <h6>descrição</h6>
                 <hr>
                 <p>
+                  <h6><i>Projeto realizado em 2024.</i></h6>
+                  <br>
                   Em parceria com uma empresa que solicitou anonimato, este estudo desenvolveu um <i>dashboard</i> interativo para 
                   auxiliar na otimização do monitoramento do fluxo em seu prédio.
                 </p>
-                <p></p>  
+                <p>  
                 Utilizando ciência de dados e visualização 
-                com <b>Power BI</b>, a solução identifica áreas de maior movimentação.
+                com <code>Power BI</code>, a solução identifica áreas de maior movimentação.
                 </p>
                 <p>Os resultados destacam padrões de circulação, permitindo uma análise detalhada dos horários de pico e 
                   das regiões mais acessadas. 
                 </p>
                 <p>
-                  <h6>Abaixo você pode conferir o <i>dashboard</i> * elaborado para o projeto.</h6>
+                  <h6>Confera o <i>dashboard</i> * elaborado para o projeto.</h6>
                 </p>
                    <p>
                     <a class="btn btn-secondary text-uppercase" href="#" data-bs-toggle="modal" data-bs-target="#galeria-modal-bi">Dashboard</a>
@@ -906,12 +898,10 @@
 <!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<!-- Your Custom Script -->
 
-
-  <!-- ======================================================================= -->
-  <!-- Custom styles for this template -->
-  <link rel="stylesheet" href="./styles.css">
+<!-- ======================================================================= -->
+<!-- Custom styles for this template -->
+<link rel="stylesheet" href="./styles.css">
 
 </body>
 </html> 
