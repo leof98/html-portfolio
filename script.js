@@ -40,6 +40,20 @@ $('.dropdown-item').click(function () {
 });
 });
 
+
+document.querySelectorAll('.dropdown-content a').forEach(item => {
+  item.addEventListener('click', function() {
+      let dropdown = this.closest('.dropdown-content');
+      dropdown.style.display = 'none';
+      
+      // Reexibir ao passar o mouse novamente
+      setTimeout(() => {
+          dropdown.style.display = '';
+      }, 200);
+  });
+});
+
+
 $(document).ready(function() {
   // Close the dropdown when an option is clicked
   $('.dropdown-item').click(function () {
