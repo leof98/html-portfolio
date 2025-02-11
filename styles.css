@@ -1,5 +1,9 @@
 /* #F9F7F7 #DBE2EF #3F72AF #112D4E */
 
+.carousel-control-prev-icon, 
+.carousel-control-next-icon {
+  filter: invert(100%); /* Makes the arrow white */
+}
 /* -------------------------- MAIN ------------------------- */
 
   body {
@@ -205,31 +209,44 @@ nav a {
 
 
 /* -------------------------- INTRO ---------------------- */
+
   #intro {
-    height: 70vh;
     background-color: #3F72AF;
-    color: #F9F7F7;
-    text-align: center;
-    font-family: 'Quicksand', sans-serif;
+    color: white;
+    padding: 2em;
+    text-align: left;
+    min-height: 70vh;
   }
-  
-@media (min-width: 768px) {
-  h2.intro-text {
-    padding-top: 100px;
+
+  #intro-text {
+    margin-right: 0 40%;
   }
-}
-  
-  .container-text {
-    max-width: 600px;
-    width: 90%;
-    margin: 0 auto;
+
+  #intro-items{
+    margin: 0 20%;
+
   }
 
   @media (max-width: 768px) {
-    #intro-text {
-      margin-top: 2em;
+    #intro-text p{ /* Reduz a margem para telas menores */
+      font-size: 15px;
     }
   }
+
+  
+  @media (max-width: 480px) {
+    #intro-text {
+      margin: 0 2%; /* Margem mínima para celulares */
+    }
+  }
+
+  @media (min-width: 1600px) {
+    #intro
+    {
+      min-height: 60vh; 
+    }
+  }
+
 
 /* ---------------- PORTFOLIO ---------------------- */
   #portfolio {
@@ -331,7 +348,7 @@ nav a {
   font-size: 16px;
   font-style: italic;
   margin: 0;
-  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Quicksand', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 #portfolio * {
@@ -476,7 +493,54 @@ nav a {
 /* -------------------- MODAL ------------------ */
 
 .title-modal {
-  text-align: ;
+  text-align: center;
+}
+
+.carousel-inner {
+  position: relative;
+}
+
+.carousel-item img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Fixed position for the prev and next buttons on the margins */
+.carousel-control-prev, 
+.carousel-control-next {
+  position: absolute;
+  padding-bottom: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10; /* Keep buttons above images */
+  padding: 5px; /* Optional: Add padding for larger clickable area */
+}
+
+.carousel-control-prev {
+  left: 0; /* Position the left button at the left margin */
+  padding-right: 50px;
+}
+
+.carousel-control-next {
+  padding-left: 50px;
+  right: 0; /* Position the right button at the right margin */
+}
+
+/* Modal (popup) styles */
+.modal-popup {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal img {
+  max-width: 85%;
+  max-height: 85%;
+  border-radius: 10px;
 }
 
 /* width of modal: different following the device: small (100%), medium(50%), large(30%); */
