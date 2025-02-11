@@ -1,3 +1,46 @@
+/* ------------- Zoom image 01  -------------- */
+document.addEventListener("DOMContentLoaded", function () {
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImg");
+
+  document.addEventListener("click", function (event) {
+    // Check if clicked element is an image inside the carousel
+    if (event.target.tagName === "IMG" && event.target.closest(".carousel-item")) {
+      modalImg.src = event.target.src;
+      modal.style.display = "flex";
+    }
+  });
+
+  // Close modal when clicking outside the image
+  modal.addEventListener("click", function () {
+    modal.style.display = "none";
+    modalImg.src = '';
+  });
+});
+
+/* ------------- Zoom image 02  -------------- */
+document.addEventListener("DOMContentLoaded", function () {
+  const modal = document.getElementById("testeModal2");
+  const modalImg = document.getElementById("TesteImg2");
+
+  document.addEventListener("click", function (event) {
+    // Check if clicked element is an image inside the carousel
+    if (event.target.tagName === "IMG" && event.target.closest(".carousel-item")) {
+      modalImg.src = event.target.src;
+      modal.style.display = "flex";
+    }
+  });
+
+  // Close modal when clicking outside the image
+  modal.addEventListener("click", function () {
+    modal.style.display = "none";
+    modalImg.src = '';
+  });
+});
+
+
+
+/* Navbar */
 $(document).ready(function() {
   var navbarCollapse = function() {
     console.log("Scroll position:", $(window).scrollTop()); // Check scroll position in console
@@ -8,8 +51,6 @@ $(document).ready(function() {
     }
   };
 
-
-  /* Navbar */
 
   // Collapse now if page is not at top
   navbarCollapse();
